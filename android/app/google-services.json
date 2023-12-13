@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "475201429605",
+    "project_id": "simplecrudff",
+    "storage_bucket": "simplecrudff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475201429605:android:4b0fe2f0de8ff9048d668c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8N4AupbZFwCtgt-fKSMPkH7jPiWBvdaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
