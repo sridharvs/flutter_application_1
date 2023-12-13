@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FirestoreService {
@@ -19,6 +21,17 @@ class FirestoreService {
         notes.orderBy('timestamp', descending: true).snapshots();
     return notesStream;
   }
+
   //Update update notes given a doc id
+  Future<void> updateNote(String docId, String newNote) {
+    return notes.doc(docId).update({
+      'note': newNote,
+      'timestamp': Timestamp.now(),
+    });
+  }
+
   //Delete notes from given doc id
+  Future<void> deleteNote(String docId) {
+    return notes.doc(docId).delete();
+  }
 }
