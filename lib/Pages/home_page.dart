@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //firestrore Object
   final FirestoreService firestoreService = FirestoreService();
-  //text controller
+  //text controller object
   final TextEditingController textController = TextEditingController();
   //open a dialog box to add a note
   void openNoteBox({String? docId}) {
